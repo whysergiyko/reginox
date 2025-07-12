@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header__relative wow fadeIn" data-wow-delay="0.5s">
+        <header class="header">
+          <div class="header__top top-header">
+            <div class="top-header__container">
+              <div class="top-header__item">
+                <div class="top-header__dropDown dropDown">
+                  <button class="dropDown__button header__link top-header__link">
+                    Москва
+                    <span class="dropDown__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                  </button>
+                  <ul class="dropDown__list">
+                    <li class="dropDown__item">
+                      <button class="dropDown__city header__link">Москва</button>
+                    </li>
+                    <li class="dropDown__item">
+                      <button class="dropDown__city header__link">Москва</button>
+                    </li>
+                    <li class="dropDown__item">
+                      <button class="dropDown__city header__link">Москва</button>
+                    </li>
+                  </ul>
+                </div>
+                <a href="" class="top-header__callBack header__link top-header__link">Обратный звонок</a>
+              </div>
+              <div class="top-header__item">
+                <a href="" class="top-header__workTime header__link top-header__link">Пн-Вс 10-19</a>
+                <a href="" class="top-header__number header__link top-header__link">8 (495) 229 85 59</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__mid mid-header">
+            <div class="mid-header__container">
+              <button class="mid-header__burger">
+                <span></span>
+                <p>Menu</p>
+              </button>
+              <a href="" class="mid-header__logo">
+                <picture>
+                  <source media="(max-width:768.99px)" srcset="img/icons/logo-s.png" />
+                  <img src="img/icons/logo.svg" alt="" />
+                </picture>
+              </a>
+              <div class="mid-header__buttons mid-buttons">
+                <button class="mid-buttons__button"><img src="img/icons/arrowsLogo.svg" alt="" /></button>
+                <button class="mid-buttons__button mid-buttons__button--search">
+                  <img src="img/icons/search.svg" alt="" />
+                </button>
+                <button class="mid-buttons__button"><img src="img/icons/cart.svg" alt="" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="header__bot bot-header">
+            <div class="bot-header__container">
+              <ul class="bot-header__list">
+                <li class="bot-header__item"><a href="" class="bot-header__link">Мойки</a></li>
+                <li class="bot-header__item"><a href="" class="bot-header__link">Смесители</a></li>
+                <li class="bot-header__item"><a href="" class="bot-header__link">Аксессуары</a></li>
+                <li class="bot-header__item"><a href="" class="bot-header__link">Плиты</a></li>
+                <li class="bot-header__item"><a href="" class="bot-header__link">Умывальники</a></li>
+                <li class="bot-header__item"><a href="" class="bot-header__link">Manhattan</a></li>
+                <li class="bot-header__item">
+                  <div class="bot-header__dropDown dropDown">
+                    <button class="dropDown__button header__link header__link-20">
+                      Другая продукция
+                      <span class="dropDown__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                    </button>
+                    <ul class="dropDown__list">
+                      <li class="dropDown__item">
+                        <button class="dropDown__city header__link">Другая продукция</button>
+                      </li>
+                      <li class="dropDown__item">
+                        <button class="dropDown__city header__link">Другая продукция</button>
+                      </li>
+                      <li class="dropDown__item">
+                        <a href="../build/anotherProduct.html" class="dropDown__city header__link">Другая продукция</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__tabs tabs-header">
+            <div class="tabs-header__container">
+              <div class="tabs-header__buttons">
+                <ul class="tabs-header__list">
+                  <li class="tabs-header__item"><a href="" class="tabs-header__link">Акции</a></li>
+                  <li class="tabs-header__item"><a href="" class="tabs-header__link">Новинки</a></li>
+                  <li class="tabs-header__item"><a href="" class="tabs-header__link">Распродажа</a></li>
+                  <li class="tabs-header__item"><a href="" class="tabs-header__link">Доставка и оплата</a></li>
+                  <li class="tabs-header__item"><a href="" class="tabs-header__link">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="tabs-header__body">
+                <div class="tabs-header__bodyItem tabs-bodyItem tabs-bodyItem--active">
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="One">
+                        Мойки
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+                    <div class="tabs-bodyItem__dropDown" id="One">
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Нержавеющая сталь </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Гранит</a></li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">PVD-покрытие (Miami) </a>
+                      </li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Нержавеющая сталь </a></li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Окрашенные (Regi Color) </a>
+                      </li>
+                    </div>
+                  </ul>
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="Two">
+                        Смесители
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+                    <div class="tabs-bodyItem__dropDown" id="Two">
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Хромированные </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Стальные </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Гранитные </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">PVD-покрытие </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Окрашенные </a></li>
+                    </div>
+                  </ul>
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="Three">
+                        Аксессуары
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+
+                    <div class="tabs-bodyItem__dropDown" id="Three">
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Разделочные доски </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Корзины </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Коландеры</a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Дозаторы</a></li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Решетки на дно/поддоны </a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Адаптеры и комплектующие </a>
+                      </li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Сифоны </a></li>
+                    </div>
+                  </ul>
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="Four">
+                        Умывальники
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+                    <div class="tabs-bodyItem__dropDown" id="Four">
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Нержавеющая сталь </a></li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Окрашенные (Regi Color) </a>
+                      </li>
+                    </div>
+                  </ul>
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="Five">
+                        С.хранения Manhattan
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+                    <div class="tabs-bodyItem__dropDown" id="Five">
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link">Manhattan </a></li>
+                      <li class="tabs-bodyItem__item"><a href="" class="tabs-bodyItem__link"> Manhattan Slim </a></li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link"> Комплекты Manhattan </a>
+                      </li>
+                    </div>
+                  </ul>
+                  <ul class="tabs-bodyItem__list">
+                    <li class="tabs-bodyItem__item">
+                      <button class="tabs-bodyItem__title" data-button="Six">
+                        Другая продукция
+                        <span class="tabs-bodyItem__arrow"><img src="img/icons/arrowDown.svg" alt="" /></span>
+                      </button>
+                    </li>
+                    <div class="tabs-bodyItem__dropDown" id="Six">
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Мойки Rodi (Португалия) </a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Мойки Whinstone (Россия) </a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Мойки Rerih (Италия)</a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Мойки Status (Италия)</a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Смесители Armando Vicario (Италия)</a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="" class="tabs-bodyItem__link">Смесители Webert (Италия)</a>
+                      </li>
+                      <li class="tabs-bodyItem__item">
+                        <a href="../build/anotherProduct.html" class="tabs-bodyItem__link">Больше.. </a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <main class="page">
+        <section class="hero">
+          <div class="hero__slider swiper">
+            <div class="hero__wrapper swiper-wrapper">
+              <div class="hero-slide swiper-slide" style="background-image: url(img/hero/bg.jpg)">
+                <div class="hero-slide__container">
+                  <h2 class="hero-slide__title">Мойки, смесители и аксессуары</h2>
+                  <div class="hero-slide__text">
+                    <p>от ведущего производителя сантехники для кухни Reginox</p>
+                  </div>
+                  <button class="hero-slide__button wow fadeInRight"><p>Стальные мойки Reg-color</p></button>
+                </div>
+              </div>
+              <div class="hero-slide swiper-slide" style="background-image: url(img/hero/bg2.jpg)">
+                <div class="hero-slide__container">
+                  <h2 class="hero-slide__title">Мойки, смесители и аксессуары</h2>
+                  <div class="hero-slide__text">
+                    <p>от ведущего производителя сантехники для кухни Reginox</p>
+                  </div>
+                  <button class="hero-slide__button"><p>Стальные мойки Reg-color</p></button>
+                </div>
+              </div>
+              <div class="hero-slide swiper-slide" style="background-image: url(img/hero/bg3.jpg)">
+                <div class="hero-slide__container">
+                  <h2 class="hero-slide__title">Мойки, смесители и аксессуары</h2>
+                  <div class="hero-slide__text">
+                    <p>от ведущего производителя сантехники для кухни Reginox</p>
+                  </div>
+                  <button class="hero-slide__button"><p>Стальные мойки Reg-color</p></button>
+                </div>
+              </div>
+              <div class="hero-slide swiper-slide" style="background-image: url(img/hero/bg4.jpg)">
+                <div class="hero-slide__container">
+                  <h2 class="hero-slide__title">Мойки, смесители и аксессуары</h2>
+                  <div class="hero-slide__text">
+                    <p>от ведущего производителя сантехники для кухни Reginox</p>
+                  </div>
+                  <button class="hero-slide__button"><p>Стальные мойки Reg-color</p></button>
+                </div>
+              </div>
+              <div class="hero-slide swiper-slide" style="background-image: url(img/hero/bg.jpg)">
+                <div class="hero-slide__container">
+                  <h2 class="hero-slide__title">Мойки, смесители и аксессуары</h2>
+                  <div class="hero-slide__text">
+                    <p>от ведущего производителя сантехники для кухни Reginox</p>
+                  </div>
+                  <button class="hero-slide__button"><p>Стальные мойки Reg-color</p></button>
+                </div>
+              </div>
+            </div>
+            <div class="hero__pagination">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container">
+            <h2 class="catalog__title title wow fadeInLeft">каталог</h2>
+            <div class="catalog__inner item-inner">
+              <div class="catalog__item item wow fadeIn">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/1.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item wow fadeIn" data-wow-delay="0.1s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/8.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item wow fadeIn" data-wow-delay="0.2s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/3.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item wow fadeIn">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/4.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item item--hide wow fadeIn" data-wow-delay="0.1s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/5.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item item--hide wow fadeIn" data-wow-delay="0.2s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/6.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item item--hide wow fadeIn">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/7.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item item--hide wow fadeIn" data-wow-delay="0.1s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/8.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+              <div class="catalog__item item item--hide wow fadeIn" data-wow-delay="0.2s">
+                <a href="" class="item__link">В каталог</a>
+                <div class="item__img">
+                  <img src="img/catalog/9.jpg" alt="" />
+                </div>
+                <div class="item__text">
+                  <p>Мойки</p>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__more item-more">Больше</button>
+          </div>
+        </section>
+        <section class="popularItems">
+          <div class="popularItems__container">
+            <h2 class="popularItems__title title wow fadeInLeft">Популярные товары</h2>
+            <div class="popularItems__inner">
+              <div class="popularItems__card card wow fadeIn">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/1.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+              <div class="popularItems__card card wow fadeIn" data-wow-delay="0.1s">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/2.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+              <div class="popularItems__card card wow fadeIn" data-wow-delay="0.2s">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/3.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+              <div class="popularItems__card card wow fadeIn">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/4.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+              <div class="popularItems__card card wow fadeIn" data-wow-delay="0.1s">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/5.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+              <div class="popularItems__card card wow fadeIn" data-wow-delay="0.2s">
+                <a href="" class="card__cart"><img src="img/icons/cart.svg" alt="" /></a>
+                <div class="card__img"><img src="img/popularItems/6.png" alt="" /></div>
+                <h4 class="card__title">Amsterdam 25 Dark chocolate</h4>
+                <div class="card__text">
+                  <p>9 950 руб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container">
+            <h2 class="about__title title wow fadeInLeft">О компании</h2>
+            <div class="about__body body-about">
+              <h2 class="about-company__title wow fadeIn">
+                Добро пожаловать на сайт Компании Reginox Reef Holding(ООО «РеджиноксРиф Холдинг») — единственного и
+                официального представителя производителя сантехнической продукции для кухни и ванной комнаты Reginox
+                (Нидерланды).
+              </h2>
+              <div class="body-about__company about-company">
+                <div class="body-about__text wow fadeIn">
+                  <p>
+                    Основной специализацией нашей компании являются розничные и оптовые продажи кухонной сантехники по
+                    всей России. Мы предлагаем кухонные мойки из нержавеющей стали и гранитного композита, смесители для
+                    кухни, а также оригинальную продукцию от Reginox:
+                  </p>
+                </div>
+                <ul class="body-about__list wow fadeIn">
+                  <li class="body-about__item">
+                    <p class="body-about__link">умывальники</p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">окрашенныемойки</p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">системы газовых конфорок PITTbyReginox</p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">многофункциональные кухонные комплексы и др.</p>
+                  </li>
+                </ul>
+                <div class="body-about__text wow fadeIn">
+                  <p>
+                    Более 25 лет назад компания RRHolding представила на российском рынке кухонные мойки Reginox из
+                    нержавеющей стали, приятно удивившие покупателей отличным качеством, многообразием моделейи
+                    современным дизайном. Продукция Reginox входит в постоянный ассортимент ряда крупных
+                    фабрик-производителей мебели, введена в предложение крупнейших продавцов мебельной фурнитуры и
+                    комплектующих, и представлена вомножестве кухонных салонов по всей России. За годы нашей работы мы
+                    заключили контракты в сферах:
+                  </p>
+                </div>
+                <ul class="body-about__list wow fadeIn" data-wow-delay="0.1s">
+                  <li class="body-about__item"><p class="body-about__link">авиастроение</p></li>
+                  <li class="body-about__item"><p class="body-about__link">вагоностроение</p></li>
+                  <li class="body-about__item"><p class="body-about__link">судостроение</p></li>
+                  <li class="body-about__item"><p class="body-about__link">здравоохранение</p></li>
+                  <li class="body-about__item"><p class="body-about__link">предприятия общественного питания</p></li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">иные учреждения сферы обслуживания и др.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="body-about__advantages about-advantages">
+                <h2 class="about-advantages__title wow fadeIn">наши преимущества</h2>
+                <ul class="body-about__list wow fadeIn">
+                  <li class="body-about__item">
+                    <p class="body-about__link">
+                      многолетний опыт, профессиональный подход, надежное партнерство и отличная репутация на рынке
+                    </p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">
+                      высококачественный европейский товар и гарантия производителя, соответствие всем международным и
+                      российским стандартами требованиям
+                    </p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">
+                      постоянное наличие на складе Москвы и Санкт-Петербурга(официальное представительство ООО
+                      «Ревестал»), а также возможность изготовления под индивидуальный заказ
+                    </p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">
+                      работа с розничными покупателями, с мелкооптовыми и крупнооптовыми заказчиками, сотрудничество с
+                      каждым покупателем или бизнес-партнеромпо специальной программе и индивидуальной ценовой политике
+                    </p>
+                  </li>
+                  <li class="body-about__item">
+                    <p class="body-about__link">
+                      широкий ассортимент и различные модификации, позволяющие реализоватьпроекты в различных сферах-
+                      доставка в любую точку России
+                    </p>
+                  </li>
+                </ul>
+                <div class="body-about__text wow fadeIn">
+                  <p>
+                    Благодаря многолетнему и плодотворному тандему RRHolding и Reginox, сегодня мы имеем большое
+                    количество бизнес-партнеров, в том числеи за пределами РФ, с которыми поддерживаем и развиваем
+                    взаимовыгодные отношения, приобрели популярность среди потребителей, и сохранили за собой статус
+                    компании, предлагающей на рынке России продукцию со «стальной репутацией». Мы предлагаем лучшее
+                    качество от европейского завода-производителя (завод расположен в Нидерландах, город Rijssen) и
+                    пожизненную гарантию на продукцию из нержавеющей стали!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="about__more">Читать полностью</button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top footer-top">
+          <div class="footer-top__container">
+            <div class="footer-top__item">
+              <button class="footer-top__button" data-drop="footerOne">
+                О компании
+                <span class="footer-top__arr"> </span>
+              </button>
+              <ul class="footer-top__list" id="footerOne">
+                <li class="footer-top__item"><a href="" class="footer-top__link">Почему мы</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Наши партнеры</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Сертификаты и гарантии</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Статьи</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Информация</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Каталоги</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Доставка и оплата</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__item">
+              <button class="footer-top__button" data-drop="footerTwo">
+                О компании <span class="footer-top__arr"> </span>
+              </button>
+              <ul class="footer-top__list" id="footerTwo">
+                <li class="footer-top__item"><a href="" class="footer-top__link">Мойки</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Смесители</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Аксессуары</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Плиты</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Умывальники</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Столешницы</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Системы хранения Manhattan</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Измельчители Bone Crusher</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Другая продукция</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__item">
+              <button class="footer-top__button" data-drop="footerThree">
+                О компании <span class="footer-top__arr"> </span>
+              </button>
+              <ul class="footer-top__list" id="footerThree">
+                <li class="footer-top__item"><a href="" class="footer-top__link">Reginox</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Rodi </a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Whinstone</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Rerih</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Status</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Bone Crusher </a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Armando Vicario </a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Webert</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Effepi</a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Glionna Bagno </a></li>
+                <li class="footer-top__item"><a href="" class="footer-top__link">Аквафор </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot footer-bot">
+          <div class="footer-bot__container">
+            <h2 class="footer-bot__title">Соц. сети</h2>
+            <ul class="footer-bot__list">
+              <li class="footer-bot__item">
+                <a href="" class="footer-bot__link"><img src="img/icons/facebook.svg" alt="" /></a>
+              </li>
+              <li class="footer-bot__item">
+                <a href="" class="footer-bot__link"><img src="img/icons/twitter.svg" alt="" /></a>
+              </li>
+              <li class="footer-bot__item">
+                <a href="" class="footer-bot__link"><img src="img/icons/vk.svg" alt="" /></a>
+              </li>
+              <li class="footer-bot__item">
+                <a href="" class="footer-bot__link"><img src="img/icons/instagram.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy footer-copy">
+          <div class="footer-copy__container">
+            <a href="" class="footer-copy__link">Политика конфеденциальности</a>
+            <p class="footer-copy__text">2020 © Reginox-shop</p>
+          </div>
+        </div>
+      </footer>
+      <div class="mask"><div class="loader"></div></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
