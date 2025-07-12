@@ -71,7 +71,7 @@
       },
       822: function () {
         new Swiper('.hero__slider', {
-          
+          direction:"horizontal",
           loop: true,
           allowTouchMove: false,
           touchMoveStopPropagation: true,
