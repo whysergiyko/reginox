@@ -679,11 +679,13 @@ body {
 .tabs-bodyItem--active {
   display: grid;
 }
-
+.hero{
+  overflow-Y:scroll;
+}
 .hero__slider {
   width: 100%;
   height: 811px;
-  overflow-Y:scroll;
+  
 }
 .hero-slide {
   background-repeat: no-repeat;
